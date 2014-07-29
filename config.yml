@@ -3,5 +3,10 @@ help_message: your help message
 welcome_message:
   title: 感谢关注北京站！
   picture: https://mp.weixin.qq.com/cgi-bin/getimgdata?token=1046036447&msgid=&mode=large&source=file&fileId=200988285
-  description: 这里是田宫迷你四驱车北京地区玩家俱乐部，您可以回复以下数字了解详情：\n1：查看车场简介、位置；\n2：查看车场资费；\n3：查看近期活动；\n4：查看比赛规则。
+  description: >
+  这里是田宫迷你四驱车北京地区玩家俱乐部，您可以回复以下数字了解详情：
+  1：查看车场简介、位置；
+  2：查看车场资费；
+  3：查看近期活动；
+  4：查看比赛规则。
   #link: linkedme.in/2013/09/25/turoial-to-be-wechat-public-account-developer/

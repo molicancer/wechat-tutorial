@@ -1,10 +1,10 @@
 class Dispatcher
 	def self.dispatch message_info
 		return :welcome if not message_info[:event].nil? and message_info[:event] == :subscribe
-		return :1 if not message_info[:content].nil? and message_info[:content].include? 'info'
-		return :2 if not message_info[:content].nil? and message_info[:content].include? 'cost'
-		return :3 if not message_info[:content].nil? and message_info[:content].include? 'note'
-		return :4 if not message_info[:content].nil? and message_info[:content].include? 'rule'
+		return :info if not message_info[:content].nil? and message_info[:content].include? '1'
+		return :cost if not message_info[:content].nil? and message_info[:content].include? '2'
+		return :note if not message_info[:content].nil? and message_info[:content].include? '3'
+		return :rule if not message_info[:content].nil? and message_info[:content].include? '4'
 		:picture_message
 	end
 end

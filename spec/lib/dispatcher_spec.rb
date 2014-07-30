@@ -1,22 +1,18 @@
 describe "#Dispatcher" do
-	it "to help message" do
-		Dispatcher.dispatch({:content => "help"}).should == :help
-	end
-
 	it "to info message" do
-		Dispatcher.dispatch({:content => "info"}).should == :info
+		Dispatcher.dispatch({:content => "info"}).should == :1
 	end
 
 	it "to cost message" do
-		Dispatcher.dispatch({:content => "cost"}).should == :cost
+		Dispatcher.dispatch({:content => "cost"}).should == :2
 	end
 
 	it "to note message" do
-		Dispatcher.dispatch({:content => "note"}).should == :note
+		Dispatcher.dispatch({:content => "3"}).should == :note
 	end
 
 	it "to rule message" do
-		Dispatcher.dispatch({:content => "rule"}).should == :rule
+		Dispatcher.dispatch({:content => "4"}).should == :rule
 	end
 
 	it "to help message" do

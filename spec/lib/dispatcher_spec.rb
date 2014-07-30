@@ -8,11 +8,11 @@ describe "#Dispatcher" do
 	end
 
 	it "to note message" do
-		Dispatcher.dispatch({:content => "3"}).should == :note
+		Dispatcher.dispatch({:content => "note"}).should == :3
 	end
 
 	it "to rule message" do
-		Dispatcher.dispatch({:content => "4"}).should == :rule
+		Dispatcher.dispatch({:content => "rule"}).should == :4
 	end
 
 	it "to help message" do

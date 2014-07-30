@@ -1,23 +1,8 @@
-# Gemfile
-source "http://rubygems.org"
+source "https://rubygems.org"
+ruby "2.0.0"
+gem 'sinatra', '1.1.0'
+gem 'nokogiri'
 
-gem "rack"
-
-# config.ru
-require "rubygems"
-require "bundler"
-Bundler.require(:default)
-
-map "/" do
-  use Rack::Static, urls: ["/assets"], root: Dir.pwd
-
-  run lambda { |env|
-    headers = {
-      "Content-Type"  => "text/html",
-      "Cache-Control" => "public, max-age=86400"
-    }
-    body = File.open("#{Dir.pwd}/index.html", File::RDONLY).read
-
-    [200, headers, [body]]
-  }
+group :test do
+	gem 'rspec'
 end
